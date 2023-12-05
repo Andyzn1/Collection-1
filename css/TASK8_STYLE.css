@@ -1,44 +1,31 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.falling-object {
+  position: absolute;
+  transition: transform 1s linear;
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  transition: transform 1s linear;
+}
+
 .label {
-    width: 726px;
-    height: 101px;
+  width: 726px;
+  height: 101px;
 }
 
 .label .text-wrapper {
-    position: fixed;
-    width: 726px;
-    top: 0;
-    left: 0;
-    font-family: "Couture-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 64px;
-    text-align: center;
-    letter-spacing: 0;
-    line-height: normal;
-    align-content: center;
+  position: fixed;
+  width: 726px;
+  top: 0;
+  left: 0;
+  font-family: "Couture-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
 }
-
-body {
-    margin: 0;
-    overflow: hidden;
-  }
-  
-  #screenSaver {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .idle {
-    position: absolute;
-    width: 50px; /* Adjust the size of the apples as needed */
-    height: 50px;
-    animation: fall linear 5s forwards; /* Adjust the duration of the fall animation */
-  }
-  
-  @keyframes fall {
-    to {
-      transform: translateY(100vh);
-    }
-  }
-  
