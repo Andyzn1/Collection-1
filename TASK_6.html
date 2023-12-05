@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/TASK6_STYLE.css" />
+    <script src="./java/TASK6.js"></script>
+  </head>
+  <body>
+    <div class="frame-4">
+      <div class="_2023-andy-zhao">©2023 Andy Zhao</div>
+      <div class="collection-3">collection3*</div>
+      <img
+        class="img-20220223-21510629-1"
+        src="./IMG/img20220223_21510629.jpg"
+      />
+      <div class="ellipse-1"></div>
+      <div class="ellipse-4"></div>
+      <div class="ellipse-6"></div>
+      <div class="ellipse-5"></div>
+      <img class="pigon-1" src="./IMG/pigon.png" />
+      <div class="pigon-2"></div>
+      <img class="pigon-3" src="./IMG/pigon.png" />
+      <img class="pigon-6" src="./IMG/pigon.png" />
+      <img class="pigon-8" src="./IMG/pigon.png" />
+      <img class="eye" id="eye-1" src="./IMG/eye.png" />
+      <img class="eye" id="eye-2" src="./IMG/eye.png" />
+      <img class="eye" id="eye-3" src="./IMG/eye.png" />
+      <img class="eye" id="eye-12" src="./IMG/eye.png" />
+
+      <script>
+        document.querySelector("body").addEventListener("mousemove", eyeball);
+
+        function eyeball(event) {
+          const eyes = document.querySelectorAll(".eye");
+          eyes.forEach(function (eye) {
+            let x = eye.getBoundingClientRect().left + eye.clientWidth / 2;
+            let y = eye.getBoundingClientRect().top + eye.clientHeight / 2;
+
+            let radian = Math.atan2(event.pageX - x, event.pageY - y);
+            let rotation = radian * (180 / Math.PI) * -1 + 270;
+            eye.style.transform = "rotate(" + rotation + "deg)";
+          });
+        }
+      </script>
+    </div>
+  </body>
+</html>
