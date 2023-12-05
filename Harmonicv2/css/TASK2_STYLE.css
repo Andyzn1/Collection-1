@@ -1,0 +1,89 @@
+body {
+	display: grid;
+	height: 100dvh;
+	margin: 0;
+}
+
+.outer {
+	position: relative;
+	max-height: 80dvh;
+	max-width: 600dvh;
+	margin: auto;
+	border: 2px solid #000;
+	visibility: hidden;
+	overflow: hidden;
+	font: bold 12px sans-serif;
+	box-shadow: -20px 20px 60px #bebebe, 20px -20px 60px #ffffff;
+	background: #f8f8f8;
+}
+
+.inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	animation: spin 360s infinite linear;
+	color: pink;
+}
+
+span {
+	position: absolute;
+}
+
+@keyframes spin {
+	from {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+}
+
+.outer {
+    position: relative;
+    max-width: 80vw; /* Adjust max-width for smaller screens */
+    margin: auto;
+    border: 2px solid #000;
+    visibility: hidden;
+    overflow: hidden;
+    font: bold 12px sans-serif;
+    box-shadow: -20px 20px 30px #bebebe, 20px -20px 30px #ffffff; /* Adjust box-shadow values */
+    background: #f8f8f8;
+}
+
+.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    animation: spin 360s infinite linear;
+    color: pink;
+}
+
+span {
+    position: absolute;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .outer {
+        max-width: 90vw; /* Adjust max-width for smaller screens */
+    }
+
+    .inner {
+        font-size: 10px; /* Adjust font-size for smaller screens */
+    }
+}
