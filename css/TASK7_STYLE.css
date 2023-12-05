@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+}
+
+#random-typing {
+  white-space: pre;
+  font-size: 18px;
+  margin: 50px;
+  color: black;
+}
+
+/* Responsive adjustments for medium-sized screens */
+@media (max-width: 800px) {
+  #random-typing {
+    font-size: 16px;
+    margin: 30px;
+  }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 600px) {
+  #random-typing {
+    font-size: 14px;
+    margin: 20px;
+  }
+}
+
+/* Responsive adjustments for extra-small screens */
+@media (max-width: 400px) {
+  #random-typing {
+    font-size: 12px;
+    margin: 10px;
+  }
+}

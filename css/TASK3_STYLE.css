@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container {
+  position: relative;
+}
+
+img {
+  max-width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain the aspect ratio */
+  transform-style: preserve-3d;
+  animation: rotate 10s linear infinite;
+  transition: filter 0.5s ease;
+  cursor: pointer;
+}
+
+img:hover {
+  filter: brightness(2); /* Adjust the brightness on hover */
+}
+
+/* Keyframes with responsive 3D rotation for all screen sizes */
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+/* Responsive styles for small screens (up to 600px) */
+@media only screen and (max-width: 600px) {
+  img {
+    width: 200px; /* Adjust the size of the rotating image for small screens */
+  }
+}
+
+/* Responsive styles for medium screens (601px to 1024px) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  img {
+    width: 250px; /* Adjust the size of the rotating image for medium screens */
+  }
+}
+
+/* Responsive styles for large screens (1025px and above) */
+@media only screen and (min-width: 1025px) {
+  img {
+    width: 300px; /* Adjust the size of the rotating image for large screens */
+  }
+}

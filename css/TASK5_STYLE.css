@@ -1,0 +1,68 @@
+/* Common styles for all screen sizes */
+.frame-1,
+.frame-1 * {
+    box-sizing: border-box;
+}
+
+.frame-1 {
+    background: #ffffff;
+    width: 100%;
+    max-width: 1440px;
+    height: 784px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto; /* Center the frame */
+}
+
+.the-old-photobook {
+    color: #000000;
+    text-align: center;
+    font: 400 32px "Ugly Dave", sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 39px;
+    width: 100%;
+    max-width: 384px;
+    height: 53px;
+    justify-content: center;
+}
+
+.img-20220223-21100799-1 {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 20%;
+    transform: translateX(-50%);
+    top: 160px;
+}
+
+/* Responsive Styles */
+
+/* Small screens (phones) */
+@media only screen and (max-width: 767px) {
+    .the-old-photobook {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+    .img-20220223-21100799-1 {
+      max-width: fit-content;
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .img-20220223-21100799-1 {
+        max-width: 50%;
+    }
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+    .the-old-photobook {
+        font-size: 40px; /* Adjust font size for larger screens */
+    }
+
+    .img-20220223-21100799-1 {
+        max-width: 60%;
+    }
+}
