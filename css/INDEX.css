@@ -15,9 +15,17 @@
 .wireframe .overlap-group {
     position: relative;
     height: 900px;
-    background-image: url(IMG/BACKGROUND.jpg);
     background-size: cover;
     background-position: 50% 50%;
+}
+
+.wireframe .background-image {
+    position: fixed;
+    width: 1440px;
+    height: 900px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
 }
 
 .wireframe .overlap {
