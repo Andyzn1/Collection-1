@@ -15,7 +15,7 @@
 .wireframe .overlap-group {
     position: relative;
     height: 900px;
-    background-image: url(/Harmonicv2/IMG/BACKGROUND.jpg);
+    background-image: url(https://github.com/Andyzn1/FINALS/blob/4d9016d9e9d9c852b1ddf982b379c406ad8774a2/IMG/BACKGROUND.jpg);
     background-size: cover;
     background-position: 50% 50%;
 }
