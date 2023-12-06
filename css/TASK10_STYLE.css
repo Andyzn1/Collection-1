@@ -14,7 +14,7 @@ body {
     width: 4vw; /* Use viewport units for responsive size */
     height: 4vw;
     animation: fall 4s linear infinite, rotate 4s linear infinite;
-    background-image: url('/Harmonicv2/IMG/12in-Vinyl-LP-Record-Angle.png');
+    background-image: url('IMG/12in-Vinyl-LP-Record-Angle.png');
     background-size: cover;
 }
 
